@@ -2,7 +2,7 @@
 set -e
 
 # $JENKINS_VERSION should be an LTS release
-JENKINS_VERSION="1.625.3"
+JENKINS_VERSION="1.642.1"
 
 # List of Jenkins plugins, in the format "${PLUGIN_NAME}/${PLUGIN_VERSION}"
 JENKINS_PLUGINS=(
@@ -16,10 +16,11 @@ JENKINS_PLUGINS=(
     "hipchat/0.1.8"
     "jenkins-multijob-plugin/1.18"
     "job-dsl/1.35"
-    "mesos/0.9.0"
+    "mesos/0.10.1"
     "metadata/1.1.0b"
     "monitoring/1.55.0"
     "parameterized-trigger/2.25"
+    "postbuild-task/1.8"
     "rebuild/1.25"
     "run-condition/1.0"
     "saferestart/0.3"
