@@ -100,6 +100,10 @@ PORT=${PORT-"8080"}
 sed -i "s!_MAGIC_ZOOKEEPER_PATHS!${ZOOKEEPER_PATHS}!" config.xml
 sed -i "s!_MAGIC_JENKINS_URL!http://${HOST}:${PORT}!" jenkins.model.JenkinsLocationConfiguration.xml
 sed -i "s!_MAGIC_JENKINS_SLAVE_USER!${SLAVE_USER}!" config.xml
+sed -i "s!_MAGIC_SLACK_DOMAIN!${SLACK_DOMAIN}!" jenkins.plugins.slack.SlackNotifier.xml
+sed -i "s!_MAGIC_SLACK_TOKEN!${SLACK_TOKEN}!" jenkins.plugins.slack.SlackNotifier.xml
+sed -i "s!_MAGIC_SLACK_ROOM!${SLACK_ROOM}!" jenkins.plugins.slack.SlackNotifier.xml
+sed -i "s!_MAGIC_BUILDSERVER_URL!${BUILDSERVER_URL}!" jenkins.plugins.slack.SlackNotifier.xml
 
 # Optional: configure containerInfo
 if [[ ! -z $DOCKER_IMAGE ]]; then
