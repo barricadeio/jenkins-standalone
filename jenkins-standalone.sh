@@ -30,7 +30,7 @@ JENKINS_PLUGINS=(
     "slack/2.0.1"
     "ssh-credentials/1.11"
     "token-macro/1.12.1"
-    "workflow-aggregator/1.15"
+    "workflow-step-api/1.11"
 )
 
 JENKINS_WAR_MIRROR="http://mirrors.jenkins-ci.org/war-stable"
