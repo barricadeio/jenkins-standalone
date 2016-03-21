@@ -2,6 +2,6 @@
 <jenkins.plugins.slack.SlackNotifier_-DescriptorImpl plugin="slack@2.0.1">
   <teamDomain>_MAGIC_SLACK_DOMAIN</teamDomain>
   <token>_MAGIC_SLACK_TOKEN</token>
-  <room>_MAGIC_SLACK_ROOM</room>
+  <room>#_MAGIC_SLACK_ROOM</room>
   <buildServerUrl>_MAGIC_BUILDSERVER_URL</buildServerUrl>
 </jenkins.plugins.slack.SlackNotifier_-DescriptorImpl>
