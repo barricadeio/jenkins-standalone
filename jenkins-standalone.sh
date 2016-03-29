@@ -2,7 +2,7 @@
 set -e
 
 # $JENKINS_VERSION should be an LTS release
-JENKINS_VERSION="1.642.3"
+JENKINS_VERSION="2.0"
 
 # List of Jenkins plugins, in the format "${PLUGIN_NAME}/${PLUGIN_VERSION}"
 JENKINS_PLUGINS=(
@@ -33,7 +33,7 @@ JENKINS_PLUGINS=(
     "workflow-step-api/1.11"
 )
 
-JENKINS_WAR_MIRROR="http://mirrors.jenkins-ci.org/war-stable"
+JENKINS_WAR_MIRROR="http://mirrors.jenkins-ci.org/war-rc"
 JENKINS_PLUGINS_MIRROR="http://mirrors.jenkins-ci.org/plugins"
 
 usage () {
